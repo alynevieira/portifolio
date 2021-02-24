@@ -25,7 +25,8 @@ nav ul {
   flex-direction: row;
   white-space: pre-wrap;
 
-  padding-right: 4rem;
+  padding-right: 3.5rem;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -36,6 +37,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-weight: 600;
+  color: #333333;
 }
 
 nav ul li a:hover {
@@ -43,10 +45,6 @@ nav ul li a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-nav ul li a:visited {
-  color: #333333;
 }
 
 .container {
@@ -73,15 +71,33 @@ nav ul li a:visited {
   text-align: center;
 }
 
-.about {
+.app-section {
   background-color: #fbfafa;
-  padding: 4rem 7rem 0 7rem;
-  min-height: 90vh;
+  min-height: 100vh;
   border-top: 0;
+  padding: 0rem 2rem 1rem 5rem;
 }
 
-.about p {
+.app-section p {
   padding-top: 1rem;
   font-size: 1.2rem;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .app-section {
+    padding: 1rem 10rem 0 10rem;
+  }
+
+  nav ul {
+    padding-right: 4rem;
+  }
+  
+}
