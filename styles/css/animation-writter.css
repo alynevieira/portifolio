@@ -1,0 +1,24 @@
+.animation-writter {
+	animation: pisca .7s infinite;
+}
+
+.animation-writter {
+	max-width: 480px;
+	text-align: center;
+}
+
+.animation-writter:after {
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation: typewriter .7s infinite;
+}
+
+@keyframes typewriter {
+	0%, 100%{
+			opacity: 1;
+	}
+	50%{
+			opacity: 0;
+	}
+}

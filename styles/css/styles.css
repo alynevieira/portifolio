@@ -1,0 +1,87 @@
+html, body {
+  font-family: 'Roboto, Arial, Helvetica, sans-serif', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', cursive;
+  margin-bottom: 1rem;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  white-space: pre-wrap;
+
+  padding-right: 4rem;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  background: -webkit-linear-gradient(135deg, #3F2DC8, #6247AA, #E38C8F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul li a:visited {
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  position: relative;
+}
+
+.first-landing {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  vertical-align: bottom;
+
+  background-image: -webkit-linear-gradient(135deg, #E5989B, #EFBEBF, #F7DEDF);
+}
+
+.general {
+  text-align: center;
+}
+
+.about {
+  background-color: #fbfafa;
+  padding: 4rem 7rem 0 7rem;
+  min-height: 90vh;
+  border-top: 0;
+}
+
+.about p {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
