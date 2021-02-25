@@ -1,0 +1,110 @@
+.button-container {
+    display: flex;
+    flex-flow: wrap;
+    height: 100%;
+}
+
+.glass-btn {
+    width: 90px;
+    height: 90px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.glass-btn:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-5px);
+    transition: all 0.3s;
+}
+
+.glass-btn.blue-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+    -moz-box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+    box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
+}
+
+.glass-btn.blue-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+    -moz-box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+    box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
+}
+
+.glass-btn.red-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+    -moz-box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+    box-shadow: 0px 20px 20px -17px rgba(255, 16, 39, 0.5);
+}
+
+.glass-btn.red-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+    -moz-box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+    box-shadow: 0px 20px 35px -16px rgba(255, 16, 39, 0.57);
+}
+
+.glass-btn.yellow-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgb(241 191 34);
+    -moz-box-shadow: 0px 20px 20px -17px rgb(241 191 34);
+    box-shadow: 0px 20px 20px -17px rgb(241 191 34);
+}
+
+.glass-btn.yellow-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgb(230 163 41);
+    -moz-box-shadow: 0px 20px 35px -16px rgb(230 163 41);
+    box-shadow: 0px 20px 35px -16px rgb(230 163 41);
+}
+
+.glass-btn.orange-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgb(244 149 104);
+    -moz-box-shadow: 0px 20px 20px -17px rgb(244 149 104);
+    box-shadow: 0px 20px 20px -17px rgb(244 149 104);
+}
+
+.glass-btn.orange-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgb(228 74 27);
+    -moz-box-shadow: 0px 20px 35px -16px rgb(228 74 27);
+    box-shadow: 0px 20px 35px -16px rgb(228 74 27);
+}
+
+.glass-btn.purple-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgb(153 93 242);
+    -moz-box-shadow: 0px 20px 20px -17px rgb(153 93 242);
+    box-shadow: 0px 20px 20px -17px rgb(153 93 242);
+}
+
+.glass-btn.purple-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgb(85 58 125);
+    -moz-box-shadow: 0px 20px 35px -16px rgb(85 58 125);
+    box-shadow: 0px 20px 35px -16px rgb(85 58 125);
+}
+
+.glass-btn.green-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgb(164 198 58 / 69%);
+    -moz-box-shadow: 0px 20px 20px -17px rgb(164 198 58 / 69%);
+    box-shadow: 0px 20px 20px -17px rgb(164 198 58 / 69%);
+}
+
+.glass-btn.green-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgb(164 198 58);
+    -moz-box-shadow: 0px 20px 35px -16px rgb(164 198 58);
+    box-shadow: 0px 20px 35px -16px rgb(164 198 58);
+}
+
+.glass-btn.black-btn {
+    -webkit-box-shadow: 0px 20px 20px -17px rgb(22 22 20 / 59%);
+    -moz-box-shadow: 0px 20px 20px -17px rgb(22 22 20 / 59%);
+    box-shadow: 0px 20px 20px -17px rgb(22 22 20 / 59%);
+}
+
+.glass-btn.black-btn:hover {
+    -webkit-box-shadow: 0px 20px 35px -16px rgb(22 22 20);
+    -moz-box-shadow: 0px 20px 35px -16px rgb(22 22 20);
+    box-shadow: 0px 20px 35px -16px rgb(22 22 20);
+}
+
+

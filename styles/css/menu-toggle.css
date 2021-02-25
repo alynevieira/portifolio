@@ -1,0 +1,100 @@
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.navbar-link a {
+	text-decoration: none;
+  color: #333333;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.navbar-link a:hover {
+  background: -webkit-linear-gradient(135deg, #3F2DC8, #6247AA, #E38C8F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+.navbar-items {
+	display: flex;
+  flex-direction: row;
+	justify-content: flex-end;
+  white-space: pre-wrap;
+
+  padding-right: 1.5rem;
+}
+
+.navbar-items-right {
+	margin-left: auto;
+}
+
+.navbar-toggle {
+	display: none;
+}
+
+.container-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+	background: -webkit-linear-gradient(135deg, #3F2DC8, #6247AA, #E38C8F);
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar-items,
+	.navbar {
+		flex-direction: column;
+	}
+
+	.navbar-items {
+		display: none;
+	}
+
+	.navbar-items-right {
+		margin-left: 0;
+	}
+
+	.navbar-show {
+		display: flex;
+    background: white;
+    width: 100%;
+    padding-top: 5rem;
+	}
+
+	.navbar-toggle {
+    display: flex; 
+    justify-content: flex-end;
+
+    padding: 2rem;
+
+		position: absolute;
+    right: 0;
+
+    cursor: pointer;
+	}
+}

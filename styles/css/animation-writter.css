@@ -1,24 +1,24 @@
-.animation-writter {
-	animation: pisca .7s infinite;
+.container-text h3 span.typed-text {
+  font-weight: normal;
+  color: rgb(153 2 54);
 }
 
-.animation-writter {
-	max-width: 480px;
-	text-align: center;
+.container-text h3 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
 }
 
-.animation-writter:after {
-	content: '|';
-	margin-left: 5px;
-	opacity: 1;
-	animation: typewriter .7s infinite;
+.container-text h3 span.cursor.typing {
+  animation: none;
 }
 
-@keyframes typewriter {
-	0%, 100%{
-			opacity: 1;
-	}
-	50%{
-			opacity: 0;
-	}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
