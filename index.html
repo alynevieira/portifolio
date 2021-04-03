@@ -36,6 +36,11 @@
 
   <div id="first-landing" style="display:none;">
     <header id="navbar">
+      <div class="navbar-brand animate--navbar">
+        <a class="logo" href="#">
+          <img src="img/cherry-blossom.png" alt="Icone flor de cerejeira" class="img-logo">
+        </a>
+      </div>
       <div class="navbar-link navbar-toggle">
         <div class="container-button" onclick="changeButton(this)">
           <div class="bar1"></div>
@@ -43,27 +48,26 @@
           <div class="bar3"></div>
         </div>
       </div>
-      <nav class="navbar-items">
-        <div class="navbar-brand animate--navbar">
-          <a class="logo" href="##">
-            <img src="img/cherry-blossom.png" alt="Icone flor de cerejeira" class="img-logo">
-          </a>
-        </div>
-        <div class="navbar-link link-toggle animate--navbar">
-          <a href="#about">Sobre</a>
-        </div>
-        <div class="navbar-link link-toggle animate--navbar">
-          <a href="#skills">Tecnologias</a>
-        </div>
-        <div class="navbar-link link-toggle animate--navbar">
-          <a href="#projects">Projetos</a>
-        </div>
-        <div class="navbar-link link-toggle animate--navbar">
-          <a href="#contact">Contato</a>
-        </div>
-        <div class="navbar-link link-toggle animate--navbar">
-          <button class="btn--purple">Resumo</button>
-        </div>
+      <nav id="nav">
+        <ul class="navbar-items">
+          <li class="navbar-link link-toggle animate--navbar">
+            <a href="#about">Sobre</a>
+          </li>
+          <li class="navbar-link link-toggle animate--navbar">
+            <a href="#skills">Tecnologias</a>
+          </li>
+          <li class="navbar-link link-toggle animate--navbar">
+            <a href="#projects">Projetos</a>
+          </li>
+          <li class="navbar-link link-toggle animate--navbar">
+            <a href="#contact">Contato</a>
+          </li>
+          <li class="navbar-link link-toggle animate--navbar">
+            <a class="btn--purple" href="data/resumo.pdf" target="_blank">
+              Resumo
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -75,10 +79,10 @@
 
         <h1 style="margin-bottom: 0;">Alyne Alice Vieira</h1>
         <div class="container-text">
-          <h2 style="margin-top: 10px;">Desenvolvedora
+          <h3 style="margin-top: 10px;">Desenvolvedora
             <span class="typed-text"></span>
             <span class="cursor">&nbsp;</span>
-          </h2>
+          </h3>
         </div>
 
         <div class="wrapper">
@@ -168,8 +172,7 @@
           <p>
             Trabalho dois anos com JavaScript e TypeScript, com framework Angular e também no back-end com NodeJS.
             Já atuei na parte de engenharia de software como analista de sistemas, no confeccionamento de documentos
-            técnicos,
-            análise de requisitos e também em metodologia ágeis como SCRUM.
+            técnicos, análise de requisitos e também em metodologias ágeis como SCRUM.
           </p>
           <p>
             Sou intuitiva, comunicativa e tenho boa relação com pessoas.
@@ -179,8 +182,6 @@
           </p>
         </div>
         <div class="container-about--right">
-          <span class="app-border-image--top"></span>
-          <span class="app-border-image--bottom"></span>
           <img src="img/ly.jpeg" class="img-fluid" alt="Foto Alyne Vieira">
         </div>
       </div>
@@ -415,7 +416,6 @@
   </footer>
 
   <!-- JAVASCRIPT -->
-  <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/writter.js"></script>
   <script type="text/javascript" src="js/menu-toggle.js"></script>
   <script type="text/javascript" src="js/menu-hide.js"></script>

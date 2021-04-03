@@ -1,9 +1,9 @@
-.container-text h2 span.typed-text {
+.container-text h3 span.typed-text {
   font-weight: normal;
   color: rgb(153 2 54);
 }
 
-.container-text h2 span.cursor {
+.container-text h3 span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
@@ -11,7 +11,7 @@
   animation: blink 1s infinite;
 }
 
-.container-text h2 span.cursor.typing {
+.container-text h3 span.cursor.typing {
   animation: none;
 }
 

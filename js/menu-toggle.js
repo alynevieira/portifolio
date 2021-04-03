@@ -1,3 +1,5 @@
+'use strict'
+
 function classToggle() {
 	const navs = document.querySelectorAll('.navbar-items')
 

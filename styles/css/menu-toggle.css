@@ -15,20 +15,21 @@
   flex: auto;
 }
 
-.navbar-link a {
-	text-decoration: none;
-  color: var(--color-sepia);
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  
+  list-style: none;
 }
 
-.navbar-link button {
-	text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 1px;
+.navbar-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-link a {
+  letter-spacing: 1.5px;
   text-transform: capitalize;
 }
 
@@ -38,17 +39,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
-
-.navbar-items {
-	display: flex;
-  flex-direction: row;
-	justify-content: flex-end;
-  white-space: pre-wrap;
-
-  align-items: center;
-
-  padding: 0.5rem 3rem;
-}
 
 .navbar-items-right {
 	margin-left: auto;
@@ -107,10 +97,9 @@
 	}
 
 	.navbar-show--toggle {
-		display: flex;
+    display: flex;
     background: white;
-    width: 100%;
-    padding-top: 5rem;
+    padding: 4rem;
 	}
 
 	.navbar-toggle {

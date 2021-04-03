@@ -12,8 +12,7 @@
   --color-sepia: #333333;
 }
 
-html,
-body {
+html, body {
   font-family: "Roboto, Arial, Helvetica, sans-serif", sans-serif;
   color: var(--color-sepia);
 
@@ -26,16 +25,18 @@ body {
   overflow-x: hidden;
 }
 
-:focus {
-  outline: #c3002e88 auto 2px;
+p, a {
+  font-size: 1.1rem;
+
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+  color: var(--color-sepia);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3,
+h4, h5, h6 {
   font-family: "Ubuntu", cursive;
   margin-bottom: 1rem;
 }
@@ -70,8 +71,9 @@ h1 {
 
 .img-logo {
   position: absolute;
-  top: 1rem;
-  width: 4rem;
+  top: 1.6rem;
+  left: 2rem;
+  width: 3rem;
 }
 
 .general {
@@ -89,13 +91,6 @@ h1 {
   padding: 3rem;
 }
 
-.app-section p {
-  font-size: 1.2rem;
-
-  line-height: 1.6;
-  letter-spacing: 0.3px;
-}
-
 .btn {
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-light);
@@ -111,6 +106,8 @@ h1 {
 }
 
 .btn--purple {
+  font-size: 1.1rem;
+
   background-color: transparent;
   border: 2px solid var(--color-red-dark);
   color: var(--color-red-dark) !important;
@@ -132,9 +129,6 @@ h1 {
 
 .img-fluid {
   width: 100%;
-
-  margin-top: 2rem;
-  position: relative;
 }
 
 .container-grid {
@@ -253,8 +247,6 @@ h1 {
 }
 
 .app-contact p {
-  font-size: 1.2rem;
-
   line-height: 1.6;
   letter-spacing: 0.3px;
 }
@@ -279,6 +271,14 @@ footer p span {
 @media only screen and (min-width: 1024px) {
   nav ul {
     padding-right: 4rem;
+  }
+  
+  .img-logo {
+    position: absolute;
+    top: 0.8rem;
+    left: 4rem;
+  
+    width: 3rem;
   }
 
   .app-section {
@@ -306,26 +306,6 @@ footer p span {
   }
 
   .container-about--right {
-    margin-left: 4rem;
-  }
-
-  .app-border-image--bottom {
-    border: 4px solid var(--color-pink);
-    width: 24rem;
-    height: 24rem;
-    position: absolute;
-    right: 0;
-    top: 35%;
-    z-index: 1;
-  }
-
-  .app-border-image--top {
-    border: 4px solid var(--color-red-dark);
-    width: 24rem;
-    height: 24rem;
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    z-index: 0;
+    margin-left: 2rem;
   }
 }
