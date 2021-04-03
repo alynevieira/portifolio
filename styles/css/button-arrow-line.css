@@ -1,5 +1,5 @@
 .link {
-	display: inline-flex;
+	display: none;
 	align-items: center;
 	padding: 5px;
 	text-decoration: none;
@@ -31,7 +31,7 @@
 }
 
 .link__arrow span:after {
-	content: '';
+	content: "";
 	display: block;
 	position: absolute;
 	left: 0;
@@ -52,7 +52,7 @@
 }
 
 .link__line:after {
-	content: '';
+	content: "";
 	display: block;
 	position: absolute;
 	left: 80px;
@@ -79,24 +79,24 @@
 @keyframes animation-line {
 	0% {
 		left: 80px;
- }
+	}
 	100% {
 		left: 0;
- }
+	}
 }
 
 @keyframes animation-arrow {
 	0% {
 		width: 0;
- }
+	}
 	100% {
 		width: 100%;
- }
+	}
 }
 
 @media screen and (min-width: 1024px) {
-  .link {
+	.link {
+		display: inline-flex;
 		transform: rotate(-90deg) translate3d(-180px, -230px, 0);
-  }
-  
+	}
 }
