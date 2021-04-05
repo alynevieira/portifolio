@@ -2,6 +2,8 @@
     display: flex;
     flex-flow: wrap;
     height: 100%;
+
+    justify-content: center;
 }
 
 .glass-btn {

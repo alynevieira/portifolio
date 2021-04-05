@@ -138,11 +138,13 @@ a {
 }
 
 .img-fluid {
-  width: 100%;
+  width: 90%;
+  
+  margin-top: 2rem;
+  padding: 5px;
 
   border-radius: 50%;
   border: 6px solid var(--color-secondary);
-  padding: 5px;
   background-clip: content-box;
 
   box-shadow: 0 0 35px -10px var(--color-secondary);
@@ -434,6 +436,8 @@ footer p span {
 
   .img-fluid {
     width: 20rem;
+
+    margin-top: 0;
   }
 
   .container-about--right {
