@@ -1,9 +1,13 @@
-.container-text h3 span.typed-text {
+@import url('../theme/styles.css');
+
+.container-text p span.typed-text {
   font-weight: normal;
-  color: rgb(153 2 54);
+  color: var(--color-secondary);
+
+  font-size: 1.3rem;
 }
 
-.container-text h3 span.cursor {
+.container-text p span.cursor {
   display: inline-block;
   background-color: #ccc;
   margin-left: 0.1rem;
@@ -11,7 +15,7 @@
   animation: blink 1s infinite;
 }
 
-.container-text h3 span.cursor.typing {
+.container-text p span.cursor.typing {
   animation: none;
 }
 

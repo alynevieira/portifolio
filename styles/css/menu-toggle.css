@@ -1,12 +1,10 @@
-@import url('./styles.css');
-
 #navbar {
   position: fixed;
   display: block;
-	top: 0;
-	right: 0;
-	width: 100%;
-  
+  top: 0;
+  right: 0;
+  width: 100%;
+
   z-index: 1;
   transition: top 0.3s;
 }
@@ -20,7 +18,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  
+
   list-style: none;
 }
 
@@ -29,23 +27,26 @@
 }
 
 .navbar-link a {
+  color: var(--color-font--light);
+
   letter-spacing: 1.5px;
   text-transform: capitalize;
 }
 
 .navbar-link a:hover {
-  background: -webkit-linear-gradient(135deg, #3F2DC8, #6247AA, #E38C8F);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-} 
+  color: var(--color-secondary);
+}
 
 .navbar-items-right {
-	margin-left: auto;
+  margin-left: auto;
 }
 
 .navbar-toggle {
-	display: none;
+  display: none;
+}
+
+.app-toggle {
+  margin-top: 1rem;
 }
 
 .container-button {
@@ -53,12 +54,14 @@
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   margin: 6px 0;
   transition: 0.4s;
-	background: -webkit-linear-gradient(135deg, #3F2DC8, #6247AA, #E38C8F);
+  background: -webkit-linear-gradient(135deg, #3f2dc8, #6247aa, #e38c8f);
 }
 
 .change .bar1 {
@@ -67,7 +70,7 @@
 }
 
 .change .bar2 {
-	opacity: 0;
+  opacity: 0;
 }
 
 .change .bar3 {
@@ -76,41 +79,48 @@
 }
 
 .navbar--show {
-  background: -webkit-linear-gradient(135deg, #eaa7a9f2 0%, var(--color-pink-light) 100%);
+  background: -webkit-linear-gradient(135deg, var(--color-nav--transparent-dark) 0%, var(--color-nav--transparent) 100%);
   z-index: 5 !important;
 
-  box-shadow: 0 0 77px -20px rgb(0 0 0 / 25%);
+  box-shadow: 0 10px 30px -10px var(--color-shadow);
 }
 
 @media only screen and (max-width: 768px) {
-	.navbar-items,
-	.navbar {
-		flex-direction: column;
-	}
+  .navbar-items,
+  .navbar {
+    flex-direction: column;
+  }
 
-	.navbar-items {
-		display: none;
-	}
+  .navbar-items {
+    display: none;
+  }
 
-	.navbar-items-right {
-		margin-left: 0;
-	}
+  .navbar-items-right {
+    margin-left: 0;
+  }
 
-	.navbar-show--toggle {
+  .navbar-show--toggle {
     display: flex;
     background: white;
     padding: 4rem;
-	}
+  }
 
-	.navbar-toggle {
-    display: flex; 
+  .navbar-toggle {
+    display: flex;
     justify-content: flex-end;
 
     padding: 2rem;
 
-		position: absolute;
+    position: absolute;
     right: 0;
 
     cursor: pointer;
-	}
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .app-toggle {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="light">
 
 <head>
   <title>Alyne Alice Vieira</title>
@@ -10,17 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
   <link rel="stylesheet" href="styles/css/buttons-social.css" type="text/css">
   <link rel="stylesheet" href="styles/css/button-arrow.css" type="text/css">
   <link rel="stylesheet" href="styles/css/animation-writter.css" type="text/css">
   <link rel="stylesheet" href="styles/css/button-arrow-line.css" type="text/css">
   <link rel="stylesheet" href="styles/css/button-skills.css" type="text/css">
   <link rel="stylesheet" href="styles/css/menu-toggle.css" type="text/css">
-  <link rel="stylesheet" href="styles/css/page-loading.css"  type="text/css">
-
-  <link rel="preload" href="styles/css/page-loading.css" as="style">
-  <link rel="preload" href="js/page-loading.js" as="script">
+  <link rel="stylesheet" href="styles/css/page-loading.css" type="text/css">
 </head>
 
 <body onload="pageLoad()">
@@ -36,11 +33,11 @@
 
   <div id="first-landing" style="display:none;">
     <header id="navbar">
-      <div class="navbar-brand animate--navbar">
+      <!-- <div class="navbar-brand animate--navbar">
         <a class="logo" href="#">
-          <img src="img/cherry-blossom.png" alt="Icone flor de cerejeira" class="img-logo">
+          <span><</span> Alyne Vieira <span>/></span>
         </a>
-      </div>
+      </div> -->
       <div class="navbar-link navbar-toggle">
         <div class="container-button" onclick="changeButton(this)">
           <div class="bar1"></div>
@@ -62,10 +59,18 @@
           <li class="navbar-link link-toggle animate--navbar">
             <a href="#contact">Contato</a>
           </li>
-          <li class="navbar-link link-toggle animate--navbar">
-            <a class="btn--purple" href="data/resumo.pdf" target="_blank">
-              Resumo
+          <li class="app-toggle link-toggle animate--navbar">
+            <a href="data/resumo.pdf" target="_blank">
+              <button class="btn-primary">
+                Resumo
+              </button>
             </a>
+          </li>
+          <li class="app-toggle link-toggle animate--navbar">
+            <label class="switch" for="switch">
+              <input type="checkbox" onchange="changeTheme()" id="switch" />
+              <span class="slider round"></span>
+            </label>
           </li>
         </ul>
       </nav>
@@ -79,10 +84,10 @@
 
         <h1 style="margin-bottom: 0;">Alyne Alice Vieira</h1>
         <div class="container-text">
-          <h3 style="margin-top: 10px;">Desenvolvedora
+          <p class="app-text--general" style="margin-top: 10px; padding-bottom: 0;">Desenvolvedora
             <span class="typed-text"></span>
             <span class="cursor">&nbsp;</span>
-          </h3>
+          </p>
         </div>
 
         <div class="wrapper">
@@ -266,9 +271,9 @@
     </div>
   </section>
 
-  <span id="projects"></span>
   <section class="app-section last-section">
     <div class="container">
+      <span id="projects"></span>
 
       <a class="link" href="#contact">
         <span class="link__arrow">
@@ -286,110 +291,196 @@
         <div class="card">
           <div class="card-image card-image--portifolio"></div>
           <div class="card-content">
-            <div class="card-title">Portifólio</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Portifólio</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--github">
+                  <path class="path" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
+                6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 
+                0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+
+            </div>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
 
             <p class="card-subtitle">HTML · CSS · JavaScript</p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--mundopet"></div>
           <div class="card-content">
-            <div class="card-title">Mundo pet</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Mundo pet</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--open">
+                  <path class="path" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline class="path" points="15 3 21 3 21 9"></polyline>
+                  <line class="path" x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </div>
+            </div>
+
             <p class="card-text">Uma aplicação web para gerenciamento e divulgação de animais em uma ONG.
               Com registro e autenticação do usuário com role, cadastramento de animais, upload de fotos e
               documentos e mais.</p>
 
             <p class="card-subtitle">Angular 9 · SCSS · Node.js · Express · MongoDB · Firebase</p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
+            <a class="btn-primary" href="#" style="margin-top: 1.5rem;">Ver detalhes</a>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--flowers"></div>
           <div class="card-content">
-            <div class="card-title">Nomid</div>
+            <h3 class="card-title">Nomid</h3>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
 
             <p class="card-subtitle">Angular 8 · SCSS · i18n </p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
+            <a class="btn-primary" href="#" style="margin-top: 1.5rem;">Ver detalhes</a>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--flowers"></div>
           <div class="card-content">
-            <div class="card-title">Eager2Learn</div>
+            <h3 class="card-title">Eager2Learn</h3>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
 
             <p class="card-subtitle">Angular 8 </p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
+            <a class="btn-primary" href="#" style="margin-top: 1.5rem;">Ver detalhes</a>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--flowers"></div>
           <div class="card-content">
-            <div class="card-title">Ecoleta</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Ecoleta</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--github">
+                  <path class="path" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
+                6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 
+                0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+
+            </div>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
 
             <p class="card-subtitle">React · React Native · Node.js · Express · Knex.js</p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--happy"></div>
           <div class="card-content">
-            <div class="card-title">Happy</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Happy</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--github">
+                  <path class="path" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
+                6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 
+                0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+
+            </div>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
 
             <p class="card-subtitle">React · Node.js · Express </p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--amordepet"></div>
           <div class="card-content">
-            <div class="card-title">Amor de pet</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Amor de pet</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--github">
+                  <path class="path" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
+                6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 
+                0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--open">
+                  <path class="path" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline class="path" points="15 3 21 3 21 9"></polyline>
+                  <line class="path" x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </div>
+
+            </div>
             <p class="card-text">Um site criado para divulgação de um projeto iniciado
               na Fatec Praia Grande devido a uma desapropriação de terreno na cidade, abandonando mais de 40 animais.
             </p>
 
             <p class="card-subtitle">HTML · CSS · JavaScript</p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
         </div>
 
         <div class="card">
           <div class="card-image card-image--empresajr"></div>
           <div class="card-content">
-            <div class="card-title">Empresa JR</div>
+            <div class="card-content--title">
+              <h3 class="card-title">Empresa JR</h3>
+
+              <div class="app-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--github">
+                  <path class="path" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 
+                6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 
+                0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 
+                6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-icon--open">
+                  <path class="path" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline class="path" points="15 3 21 3 21 9"></polyline>
+                  <line class="path" x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </div>
+
+            </div>
             <p class="card-text">Um site para equipe da Empresa júnior da Fatec Praia Grande,
               de divulgação e contato com empresas e os demais alunos.</p>
 
             <p class="card-subtitle">HTML · CSS · JavaScript</p>
-            <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
         </div>
 
-        <div class="card">
+        <!-- <div class="card">
           <div class="card-image card-image--flowers"></div>
           <div class="card-content">
-            <div class="card-title">AACC</div>
+            <h3 class="card-title">AACC</h3>
             <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Detraxit consequat et quo num tendi nada.
               Quem manda na minha terra sou euzis! Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
             <button class="btn btn--block card__btn">Ver detalhes</button>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -404,9 +495,9 @@
       </p>
 
       <div class="app-contact--flex">
-        <button class="btn--purple app-contact--button">
-          <a href="mailto:alynealicevieira1@gmail.com">Diga olá</a>
-        </button>
+        <a href="mailto:alynealicevieira1@gmail.com" class="btn-primary app-contact--button">
+          Diga olá
+        </a>
       </div>
     </div>
   </section>
@@ -416,6 +507,7 @@
   </footer>
 
   <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="js/theme.js"></script>
   <script type="text/javascript" src="js/writter.js"></script>
   <script type="text/javascript" src="js/menu-toggle.js"></script>
   <script type="text/javascript" src="js/menu-hide.js"></script>

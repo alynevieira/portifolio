@@ -37,7 +37,7 @@
 	left: 0;
 	width: 0;
 	height: 2px;
-	background: #c3002f;
+	background: var(--color-secondary);
 }
 
 .link__line {
@@ -58,11 +58,11 @@
 	left: 80px;
 	width: 70px;
 	height: 2px;
-	background: #c3002f;
+	background: var(--color-secondary);
 }
 
 .link__text {
-	color: #4a4a4a;
+	color: var(--color-font--light);
 	font-size: 18px;
 	text-transform: uppercase;
 }

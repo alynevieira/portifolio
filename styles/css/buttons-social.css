@@ -1,19 +1,19 @@
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   transition: all 0.4s ease-out;
-
-  padding: 0rem 6rem;
 }
 
 .social-link--linkedin {
   color: #2d76b0;
+
+  margin: 0 1rem;
 }
 
 .social-link--github {
-  color: #000;
+  color: #333333;
 }
 
 .social-link--instagram {
@@ -26,7 +26,7 @@
 }
 
 .social-link .social-svg .social-group__icon {
-  fill: #191308;
+  fill: var(--color-font--light);
   transition: all 0.2s;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .social-link .social-svg .social-group__outline {
-  stroke: #191308;
+  stroke: var(--color-font--light);
   transform-origin: 50% 50%;
   transition: all 0.2s;
 }
