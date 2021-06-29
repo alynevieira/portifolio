@@ -8,5 +8,5 @@ function pageLoad() {
 
 function showPage() {
     document.getElementById("preloader").remove();
-    document.getElementById("first-landing").style.display = "flex";
+    document.getElementById("main").style.display = "initial";
 }
