@@ -1,10 +1,10 @@
-@import url('../theme/styles.css');
+@import url('../styles.css');
 
 .container-text p span.typed-text {
   font-weight: normal;
   color: var(--color-secondary);
 
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .container-text p span.cursor {
@@ -25,4 +25,11 @@
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-text p span.typed-text {
+    font-size: 3rem;
+  }
+  
 }

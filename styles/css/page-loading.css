@@ -14,8 +14,6 @@
 
 .cup {
 	position: absolute;
-	left: 35%;
-	top: 50%;
 	z-index: 10;
 	width: 85px;
 	height: 80px;
@@ -248,12 +246,5 @@
 	100% {
 		transform: translate(0, 0);
 		opacity: 0;
-	}
-}
-
-@media only screen and (min-width: 1024px) { 
-	.cup {
-		top: 45%;
-		left: 45%;
 	}
 }

@@ -1,53 +1,63 @@
+@import url("../styles.css");
+
 .arrow {
-    position: absolute;
-    bottom: 25%;
-    left: 45%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow a {
-    display: block;
-    padding: 1rem;
+  display: block;
+  padding: 1rem;
 }
 
 .arrow a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -35px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-animation: sdb05 1.5s infinite;
-    animation: sdb05 1.5s infinite;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -35px;
+  border-left: 3px solid var(--color-font--light);
+  border-bottom: 3px solid var(--color-font--light);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
   }
-  @-webkit-keyframes sdb05 {
-    0% {
-      -webkit-transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
+  50% {
+    opacity: 1;
   }
-  @keyframes sdb05 {
-    0% {
-      transform: rotate(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
   }
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .arrow {
+    bottom: 10%;
+  }
+}

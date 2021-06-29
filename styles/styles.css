@@ -103,8 +103,8 @@ p {
   min-height: 100vh;
 
   display: flex;
-  padding-top: 8rem;
-  padding-left: 10rem;
+  align-items: center;
+  padding-left: 3rem;
 
   position: relative;
   vertical-align: bottom;
@@ -113,16 +113,16 @@ p {
 }
 
 .app-text--general {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: var(--color-font--dark);
 
   margin-top: 10px;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .app-text--description {
   color: var(--color-font--dark);
-  max-width: 500px;
+  max-width: 310px;
 }
 
 .logo {
@@ -144,7 +144,7 @@ p {
 
 .text-title {
   margin: 0;
-  font-size: 5rem;
+  font-size: 2.5rem;
 }
 
 .img-profile {
@@ -230,7 +230,7 @@ p {
 .card-image::before {
   content: "";
   display: block;
-  padding-top: 66.6%;
+  padding-top: 48.2%;
 }
 
 .card-content {
@@ -348,6 +348,9 @@ p {
   padding: 0 2.5rem;
   height: 60vh;
   text-align: center;
+
+  display: flex;
+  align-items: center;
 }
 
 .app-contact--flex {
@@ -431,7 +434,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url("https://img.icons8.com/ios-glyphs/16/000000/bright-moon--v1.png");
+  background: white url("../img/icons/moon.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -465,7 +468,7 @@ footer p span {
 .app-details {
   min-height: 80vh;
   border-top: 0;
-  padding: 6rem 10rem;
+  padding: 6rem 3rem;
 
   background-image: -webkit-linear-gradient(270deg, var(--color-background--dark), var(--color-background--light) 20%);
 }
@@ -473,6 +476,10 @@ footer p span {
 @media only screen and (min-width: 1024px) {
   nav ul {
     padding-right: 4rem;
+  }
+
+  .app-details {
+    padding: 6rem 10rem;
   }
 
   .app-section {
@@ -509,6 +516,23 @@ footer p span {
   .app-contact--button {
     margin-top: 2rem;
   }
+
+  .text-title {
+    font-size: 5rem;
+  }
+
+  .app-text--general {
+    font-size: 3rem;
+  }
+
+  .app-text--description {
+    max-width: 500px;
+  }
+
+  #first-landing {
+    padding-left: 10rem;
+  }
+  
 }
 
 @keyframes dash {
