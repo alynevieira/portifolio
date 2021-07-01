@@ -156,6 +156,9 @@ p {
   min-height: 80vh;
   border-top: 0;
   padding: 3rem;
+
+  display: flex;
+  align-items: center;
 }
 
 .btn-primary {
@@ -221,6 +224,8 @@ p {
   filter: contrast(70%);
   overflow: hidden;
   position: relative;
+
+  width: 100%;
 }
 
 .card-image:hover {
@@ -296,34 +301,6 @@ p {
 .card-text {
   flex: 1 1 auto;
   margin-bottom: 1.25rem;
-}
-
-.card-image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
-}
-
-.card-image--netflix {
-  background-image: url("../img/netflix.PNG");
-}
-
-.card-image--portifolio {
-  background-image: url("../img/portifolio.PNG");
-}
-
-.card-image--mundopet {
-  background-image: url("../img/mundopet.PNG");
-}
-
-.card-image--happy {
-  background-image: url("../img/happy.PNG");
-}
-
-.card-image--amordepet {
-  background-image: url("../img/amordepet.PNG");
-}
-
-.card-image--empresajr {
-  background-image: url("../img/empresajr.PNG");
 }
 
 .btn {
