@@ -4,8 +4,7 @@
   --color-nav--transparent: #fef6f6fa;
   --color-nav--transparent-dark: #fcd3d3f5;
 
-  --color-font: #768390;
-  --color-font--light: #4b4b4b;
+  --color-font: #4b4b4b;
   --color-font--dark: #3d4351;
   --color-background--light: #fbfafa;
   --color-background--dark: #fcd3d3;
@@ -22,7 +21,6 @@
   --color-nav--transparent-dark: #253449f1;
 
   --color-font: #ccd6f6;
-  --color-font--light: #ccd6f6;
   --color-font--dark: #e2e9ff;
   --color-background--light: #253449;
   --color-background--dark: #0a192f;
@@ -121,7 +119,7 @@ p {
 }
 
 .app-text--description {
-  color: var(--color-font--dark);
+  color: var(--color-font);
   max-width: 310px;
 }
 
@@ -435,10 +433,7 @@ footer {
 
 footer p {
   font-size: 0.98rem;
-}
-
-footer p span {
-  color: #88292f;
+  color: var(--color-font--dark);
 }
 
 /* --------------------- DETALHES -----------------------*/

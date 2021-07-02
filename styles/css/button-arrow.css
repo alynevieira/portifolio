@@ -19,8 +19,8 @@
   width: 24px;
   height: 24px;
   margin-left: -35px;
-  border-left: 3px solid var(--color-font--light);
-  border-bottom: 3px solid var(--color-font--light);
+  border-left: 3px solid var(--color-font--dark);
+  border-bottom: 3px solid var(--color-font--dark);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb05 1.5s infinite;
