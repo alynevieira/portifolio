@@ -1,0 +1,20 @@
+{
+  "name": "portifolio",
+  "version": "v1.0.1",
+  "description": "",
+  "main": "content.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alynevieira/portifolio.git"
+  },
+  "author": "Alyne Vieira <alynealicevieira1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alynevieira/portifolio/issues"
+  },
+  "homepage": "https://github.com/alynevieira/portifolio#readme"
+}
