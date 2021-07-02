@@ -3,7 +3,7 @@
 var page;
 
 function pageLoad() {
-    page = setTimeout(showPage, 2500);
+    page = setTimeout(showPage, 2000);
 }
 
 function showPage() {

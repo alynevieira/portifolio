@@ -113,7 +113,7 @@ function listAllProjects() {
 
     const cardHTML = 
     `<div class="card">
-      <img src="${res.urlImage}" class="card-image" />
+      <img src="${res.urlImage}" alt="${res.name}" class="card-image" />
       <div class="card-content">
         <div class="card-content--title">
           <h3 class="card-title">${res.name}</h3>

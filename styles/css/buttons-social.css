@@ -25,7 +25,7 @@
 }
 
 .social-link .social-svg .social-group__icon {
-  fill: var(--color-font--light);
+  fill: var(--color-font--dark);
   transition: all 0.2s;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .social-link .social-svg .social-group__outline {
-  stroke: var(--color-font--light);
+  stroke: var(--color-font--dark);
   transform-origin: 50% 50%;
   transition: all 0.2s;
 }
